@@ -29,6 +29,7 @@ const Currency = (props) => {
         <Dropdown.Item as='button' value='$ Dollar'>$ Dollar</Dropdown.Item>
         <Dropdown.Item as='button' value='€ Euro'>€ Euro</Dropdown.Item>
         <Dropdown.Item as='button' value='₹ Ruppee'>₹ Ruppee</Dropdown.Item>
+        <Dropdown.Item as='button' value='₳ Argentine'>₳ Argentine</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   </div>
