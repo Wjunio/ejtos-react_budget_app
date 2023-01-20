@@ -15,6 +15,9 @@ const Budget = (props) => {
       if (event.target.value<totalExpenses) {
         alert("You cannot reduce the budget value lower than the spending.");
       }
+      if (event.target.value>20000) {
+        alert("You cannot increase the budget value above 20.000.");
+      }
       
       dispatch({
         type: 'SET_BUDGET',
@@ -33,7 +36,7 @@ const Budget = (props) => {
               id='budget'
               max="20000"
               step="10"
-              defaultValue="6000"
+              defaultValue="2000"
               onChange={(event) => checkBudget(event)}
               />
           </label>
